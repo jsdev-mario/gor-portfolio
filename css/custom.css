@@ -288,7 +288,7 @@ section {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #111;
+  background-color: #082a4d;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -572,7 +572,7 @@ nav a.nav-link:focus {
 
 .photo-wrap {
   position: relative;
-  width: 80%;
+  width: 90%;
 }
 
 .photo-text .fa,
@@ -1020,7 +1020,7 @@ nav a.nav-link:focus {
 #testimonials {
   background: url(../img/testimonials-bg.jpg) repeat-y;
   background-size: cover;
-  background-color: #000;
+  background-color: #082a4d;
   text-align: center;
   padding-bottom: 4rem;
   margin-bottom: 0;
@@ -1121,7 +1121,7 @@ nav a.nav-link:focus {
 /******************************************************************************************************************/
 
 #contact {
-  background: #333;
+  background: #1f364d;
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
@@ -1286,7 +1286,7 @@ nav a.nav-link:focus {
 
 .footer {
   color: #fff;
-  background: #111;
+  background: #082a4d;
   margin-bottom: 0;
   margin-top: 0;
   padding-top: 2rem;
