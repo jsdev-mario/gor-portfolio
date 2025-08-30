@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .gm-style .gm-style-mtc label,
+      .gm-style .gm-style-mtc div {
+        font-weight: 400;
+      }
+
+      .gm-style .gm-style-mtc ul,
+      .gm-style .gm-style-mtc li {
+        box-sizing: border-box;
+      }
+    </style>
+    <style>
+      .gm-control-active > img {
+        box-sizing: content-box;
+        display: none;
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .gm-control-active > img:nth-child(1) {
+        display: block;
+      }
+
+      .gm-control-active:hover > img:nth-child(1),
+      .gm-control-active:active > img:nth-child(1) {
+        display: none;
+      }
+
+      .gm-control-active:hover > img:nth-child(2),
+      .gm-control-active:active > img:nth-child(3) {
+        display: block;
+      }
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700"
+    />
+    <style>
+      .gm-ui-hover-effect {
+        opacity: 0.6;
+      }
+
+      .gm-ui-hover-effect:hover {
+        opacity: 1;
+      }
+    </style>
+    <style>
+      .gm-style .gm-style-cc span,
+      .gm-style .gm-style-cc a,
+      .gm-style .gm-style-mtc div {
+        font-size: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+    <style>
+      @media print {
+        .gm-style .gmnoprint,
+        .gmnoprint {
+          display: none;
+        }
+      }
+
+      @media screen {
+        .gm-style .gmnoscreen,
+        .gmnoscreen {
+          display: none;
+        }
+      }
+    </style>
+    <style>
+      .gm-style-pbc {
+        transition: opacity ease-in-out;
+        background-color: rgba(0, 0, 0, 0.45);
+        text-align: center;
+      }
+
+      .gm-style-pbt {
+        font-size: 22px;
+        color: white;
+        font-family: Roboto, Arial, sans-serif;
+        position: relative;
+        margin: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    </style>
+    <style>
+      .gm-style img {
+        max-width: none;
+      }
+
+      .gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      #loom-companion-mv3 {
+        display: none !important;
+      }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come after these tags -->
+
+    <!-- Fill in the following meta tags -->
+    <meta
+      name="keywords"
+      content="Lucas Zhu, Full stack developer, Web developer, portpolio "
+    />
+    <meta name="description" content="Description" />
+    <meta name="author" content="Author" />
+
+    <!-- Change the site title -->
+    <title>Lucas Zhu</title>
+
+    <!-- You can regenerate the favicons as you wish using http://realfavicongenerator.net/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,300i,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Pretty Photo -->
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="css/flickity.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- custom.css - the styling for this template -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Modernizr -->
+    <script src="js/modernizr-custom.js"></script>
+
+    <!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/common.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/util.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/map.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/marker.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/stats.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/onion.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/43/3/controls.js"></script> -->
+  </head>
+
+  <body>
+    <!-- status spinner showing while loading the page -->
+    <div id="preloader" style="display: none"></div>
+
+    <!-- HEADER -->
+    <header>
+      <nav id="mySidenav" class="sidenav navbar-nav" style="width: 0px">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="nav-link" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <span id="openNav" onclick="openNav()" style="display: inline">☰</span>
+    </header>
+
+    <!-- HEADER END -->
+
+    <div id="content-wrap" style="margin-bottom: 552px">
+      <!-- HERO AREA -->
+      <div
+        class="jumbotron"
+        id="hero"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="0"
+        style="background-position: 0% 0%"
+      >
+        <div class="container">
+          <h1>Hello, I am Lucas Zhu</h1>
+          <span class="typed">I am </span><span class="typed-cursor">|</span>
+          <div class="typed-wrap"></div>
+          <div class="d-flex justify-content-center">
+            <a
+              href="#portfolio"
+              class="btn btn-primary portfolio-link scroll-link btn-black"
+              style="opacity: 1; display: block; width: 200px"
+              >See my portfolio</a
+            ><br />
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/lucas.zhu.7792" target="__black"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yuan-zhang-zhu-949830355"
+              target="__black"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/jsdev-mario" target="__black"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- HERO AREA END -->
+
+      <!-- bouncing arrow -->
+      <div class="arrow-wrap">
+        <a
+          href="#about"
+          class="arrow down-bounce scroll-link fa fa-angle-double-down"
+        ></a>
+      </div>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="photo-wrap">
+                <img src="img/photo.png" class="photo" alt="" />
+
+                <div class="photo-overlay">
+                  <div class="photo-text social">
+                    <a
+                      href="https://www.facebook.com/lucas.zhu.7792"
+                      target="__black"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                    <a
+                      href="https://linkedin.com/in/lucas-zhu-029097202"
+                      target="__black"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/w3ever" target="__black"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a href="https://angel.co/u/lucas-zhu-1" target="__black"
+                      ><i class="fa fa-angellist"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="aboutRight" class="col-lg-6 col-12">
+              <div>
+                <h4 class="mb-4">Hello! I am Lucas Zhu</h4>
+                <h2>ABOUT ME</h2>
+              </div>
+              <div class="mb-4">
+                <p>
+                  Senior Full-Stack Web & Mobile Software Engineer able to
+                  listen and insert the ideas of a client or collaborator, and
+                  build a sophisticated website for user experience.
+                  Collaborated with groups and classmates, to solve complex
+                  situations. Constantly seeking to grow my network.
+                </p>
+                <p>
+                  Determined to complete and present the best possible product
+                  for the user, researching and understanding API documentation,
+                  reading and using different Frameworks, adjusting to
+                  time-sensitive matters.
+                </p>
+              </div>
+              <div class="d-flex justify-content-around align-items-center">
+                <div class="text-left" style="width: 300px; line-height: 2rem">
+                  <div>
+                    <i class="fa fa-map-marker"> </i>&nbsp;&nbsp;Hong Kong
+                  </div>
+                  <!-- <div><i class="fa fa-phone"> </i>&nbsp;&nbsp;800 123-456-789</div> -->
+                  <div>
+                    <i class="fa fa-envelope"> </i
+                    >&nbsp;&nbsp;lucaszhu127@gmail.com
+                  </div>
+                  <div>
+                    <i class="fa fa-skype"> </i
+                    >&nbsp;&nbsp;live:.cid.6b6904984ef1d12
+                  </div>
+                </div>
+                <a
+                  href="resume/Lucas_Zhu_Resume.pdf"
+                  class="btn btn-primary btn-black"
+                  style="opacity: 1; display: block; width: 200px"
+                  download=""
+                  ><i class="fa fa-download mr-3"></i>Download Resume</a
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT END -->
+
+      <!-- SERVICES -->
+      <section id="services">
+        <div class="section-header">
+          <div>
+            <h2>Services I offer</h2>
+          </div>
+        </div>
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div class="circle"><i class="fa fa-desktop"></i></div>
+                  <h3>Web Development</h3>
+                  <p>
+                    Deliver SaaS applications in the e-commerce, real estate,
+                    marketplaces, law compliance, human resource management, and
+                    healthcare domains.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div class="circle"><i class="fa fa-mobile"></i></div>
+                  <h3>Mobile Development</h3>
+                  <p>
+                    With 5years of expertise in mobile development, I provide
+                    development services for either native applications or
+                    provide cross-platform solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div class="circle"><i class="fa fa-code"></i></div>
+                  <h3>ME(ARV)N Stack</h3>
+                  <p>
+                    Provide complete spectrum of ME(ARV)N Stack development
+                    solutions that include ecommerce development, consulting
+                    services and mobile app development.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div class="circle"><i class="fa fa-cogs"></i></div>
+                  <h3>DevOps, Server Support</h3>
+                  <p>
+                    Offer remote administration services that will allow you to
+                    maintain computer network at the optimum level at a
+                    reasonable price.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES END -->
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section-header">
+          <div>
+            <h2>My Experience</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Full Stack Developer</h3>
+              <span>2022 ~ 2025</span><br />
+              <span>Heynannyly GmbH, München, German</span>
+              <p class="font-weight-bold my-3">
+                Heynanny GmbH is a babysitter reservation platform that connects
+                parents with trusted caregivers. It offers seamless booking,
+                subscriptions, and secure payments with real-time notifications.
+              </p>
+              <ul class="text-left">
+                <li>
+                  Designed the database structure for the booking timeslot
+                </li>
+                <li>
+                  Contributed to backend development using Google Cloud Platform
+                  (GCP) and Firestore.
+                </li>
+                <li>
+                  Implemented booking, subscription, and payment systems using
+                  Stripe.
+                </li>
+                <li>
+                  Built emailing and SMS notification systems using SendGrid,
+                  Twilio, and WhatsApp.
+                </li>
+                <li>
+                  Contributed to front-end development using React and MUI.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Backend Developer</h3>
+              <span>2021 ~ 2022</span><br />
+              <span>Easy-Tutor GmbH, München, German</span>
+              <p class="font-weight-bold my-3">
+                Easy-Tutor is an online tutoring platform connecting students
+                with qualified teachers. It offers flexible scheduling, video
+                lessons via Zoom, and secure payment processing.
+              </p>
+              <ul class="text-left mt-3">
+                <li>
+                  Contributed backend development using Strapi (Node.js Headless
+                  CMS) and MongoDB.
+                </li>
+                <li>
+                  Designed a time slot generation and sync algorithm based on
+                  teacher availability.
+                </li>
+                <li>
+                  Integrated Cronofy scheduling sync API, Zoom API for video
+                  lessons
+                </li>
+                <li>Integration of Mollie API for payment.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Full Stack Developer</h3>
+              <span>2021 ~ 2021</span><br />
+              <span>OSM Leather USA, California, United State</span>
+              <p class="font-weight-bold my-3">
+                OSM Leather USA is a marketplace e-commerce platform for leather
+                goods.
+              </p>
+              <ul class="text-left mt-3">
+                <li>
+                  Developed the backend of the marketplace system using Strapi
+                  and PostgreSQL.
+                </li>
+                <li>Built and optimized the frontend using Next.js.</li>
+                <li>Integrated Stripe for secure payment processing.</li>
+                <li>
+                  Scraped data from e-commerce sites like Beyoglu, Matras, and
+                  Tergan.
+                </li>
+                <li>
+                  Integrated Algolia for search functionality and ChatGPT for
+                  enhanced user interaction.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Senior Software Developer</h3>
+              <span>2018 ~ 2021</span><br />
+              <span>Opark, Inc, Mill Valley, California, United States</span>
+              <p class="font-weight-bold">
+                Opark Inc. operates MyClubLives, a platform designed to enhance
+                club and event experiences. It provides seamless event
+                management, member engagement, and digital solutions for clubs
+                and communities.
+              </p>
+              <ul class="text-left mt-3">
+                <li>
+                  Developed racquets & sports club management and reservation
+                  system using Node.js, Express.js, MongoDB, React.js, Redux.js.
+                </li>
+                <li>
+                  Interacted with the team effectively offering suggestions on
+                  both logical and physical design to assure that the system
+                  built would be resilient and bulletproof into the future.
+                </li>
+                <li>
+                  Planned, wrote, and debugged web applications and software
+                  with complete accuracy.
+                </li>
+                <li>
+                  The user utilization rate of the system was increased from 20%
+                  to 100%.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Freelance Developer</h3>
+              <span>2017 ~ 2018</span><br />
+              <span>Upwork, San Francisco, California, USA</span>
+              <ul class="text-left mt-3">
+                <li>
+                  Developed web and mobile applications for various clients.
+                </li>
+                <li>
+                  Worked on backend development, database design, and API
+                  integrations.
+                </li>
+                <li>
+                  Delivered custom solutions across multiple technologies.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Computer Science</h3>
+              <span>April 2013 ~ June 2017</span><br />
+              <p>Hong Kong University of Science and Technology</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE END -->
+
+      <!-- SKILL -->
+      <section id="skill">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-header">
+                <div>
+                  <h2>Technical Skills</h2>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="pb-0 mb-1">
+                    Node.js / Strapi / Express.js / MongoDB / DynamoDB
+                  </h3>
+                  <p class="mb-1">98%</p>
+                </div>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 98%"
+                    aria-valuenow="98"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="pb-0 mb-1">Python / Django / Flask</h3>
+                                <p class="mb-1">70%</p>
+                            </div>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="pb-0 mb-1">Ruby / Ruby on Rails</h3>
+                                <p class="mb-1">70%</p>
+                            </div> -->
+                <!-- <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="pb-0 mb-1">
+                    React / React Native / Redux / Next / Vue / Nuxt
+                  </h3>
+                  <p class="mb-1">95%</p>
+                </div>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="pb-0 mb-1">
+                    JavaScript / TypeScript / HTML / CSS
+                  </h3>
+                  <p class="mb-1">99%</p>
+                </div>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 99%"
+                    aria-valuenow="99"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="pb-0 mb-1">Swift (iOS) / Java (Android)</h3>
+                  <p class="mb-1">95%</p>
+                </div>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="section-header">
+                <div>
+                  <h2>Professional Skills</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 mb-4">
+                  <h3 class="mb-1">Communication</h3>
+                  <div class="progress-circle mx-auto" data-value="95">
+                    <span class="progress-left">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <div
+                      class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"
+                    >
+                      <div class="h2 mb-0 font-weight-bold">
+                        95<sup class="small">%</sup>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 mb-4">
+                  <h3 class="mb-1">Team Work</h3>
+                  <div class="progress-circle mx-auto" data-value="96">
+                    <span class="progress-left">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <div
+                      class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"
+                    >
+                      <div class="h2 mb-0 font-weight-bold">
+                        96<sup class="small">%</sup>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 mb-4">
+                  <h3 class="mb-1">Creativity</h3>
+                  <div class="progress-circle mx-auto" data-value="90">
+                    <span class="progress-left">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <div
+                      class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"
+                    >
+                      <div class="h2 mb-0 font-weight-bold">
+                        90<sup class="small">%</sup>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 mb-4">
+                  <h3 class="mb-1">Delivery Speed</h3>
+                  <div class="progress-circle mx-auto" data-value="92">
+                    <span class="progress-left">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-black"></span>
+                    </span>
+                    <div
+                      class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"
+                    >
+                      <div class="h2 mb-0 font-weight-bold">
+                        92<sup class="small">%</sup>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIRE ME -->
+      <section
+        id="hireme"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="0"
+        style="background-position: 0% 0%"
+      >
+        <div class="section-header container">
+          <div class="col-12">
+            <h2
+              class="animation animated fadeInLeft"
+              data-animation="fadeInLeft"
+              style="opacity: 1"
+            >
+              What would you like to Do?
+            </h2>
+            <a
+              data-animation="fadeInRight"
+              class="btn btn-primary animation animated fadeInRight"
+              href="mailto:lucaszhu127@gmail.com"
+              style="opacity: 1; width: 200px"
+              >Hire me!</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- HIRE ME END -->
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <div class="section-header">
+          <div>
+            <h2>My Works</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            id="portfolio-items"
+            class="row"
+            style="position: relative; height: 848.532px"
+          >
+            <div
+              class="item col-md-6 col-lg-4 col-12 frontend"
+              data-category="front end"
+              style="position: absolute; left: 360px; top: 565px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/heynanny.png"
+                  alt="heynanny"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">Heynanny GmbH</h3>
+                  <a
+                    href="https://www.heynanny.com/"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 fullstack backend frontend mobile"
+              data-category="fullstack, backend, frontend, mobile"
+              style="position: absolute; left: 0px; top: 0px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/myclublives.jpg"
+                  alt="MyClubLives"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">Opark Inc</h3>
+                  <a
+                    href="https://www.myclublives.com/"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 plugins fullstack backend frontend"
+              data-category="fullstack, backend, frontend"
+              style="position: absolute; left: 360px; top: 0px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/easy-tutor.jpg"
+                  alt="Dope 360"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">Easy-Tutor GmbH</h3>
+                  <a
+                    href="https://easy-tutor.eu/"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 col-12 backend"
+              data-category="backend"
+              style="position: absolute; left: 0px; top: 565px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/leathergps.jpg"
+                  alt="leathergps"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">Leather GPS</h3>
+                  <a
+                    href="https://leathergps.vercel.app/"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 mobile"
+              data-category="mobile"
+              style="position: absolute; left: 0px; top: 282px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/TAS Chauffeurs.jpg"
+                  alt="ODONTOIATRIA"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">
+                    iOS/Android Mobile App (Freelancing)
+                  </h3>
+                  <a
+                    href="https://www.taxidispatchsystems.co.uk/features#passenger-app"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 col-12 frontend"
+              data-category="frontend"
+              style="position: absolute; left: 360px; top: 282px"
+            >
+              <div class="item-wrap">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio/TrolleyStopInn.jpg"
+                  alt="Trolley Stop Inn"
+                />
+              </div>
+              <div
+                class="magnifier d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <h3 class="text-white text-center">
+                    Angular 8 Front End Development (Freelancing)
+                  </h3>
+                  <a
+                    href="http://www.trolleystopinn.com/"
+                    class="btn btn-primary btn-black"
+                    target="_black"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO END -->
+
+      <!-- TESTIMONIALS -->
+      <section
+        id="testimonials"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="100"
+        style="background-position: 0% 0%"
+      >
+        <div class="section-header">
+          <div>
+            <h2>What my clients say</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="testimonials-content" class="col-12">
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <!-- <img class="testimonial-avatar" src="img/client1.png" alt=""> -->
+                  <q class="testimonial-quote"
+                    >Excellent teammate - much more like a partner than a
+                    contractor. He is excellent at collaboration and
+                    problem-solving. His coding is excellent and he has always
+                    been responsive whenever we have needed more work or to
+                    assist with operations. I highly recommend him for any
+                    technical task</q
+                  >
+                  <span class="testimonial-author">Bryan Baker, CEO</span>
+                </div>
+              </div>
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <!-- <img class="testimonial-avatar" src="img/client2.png" alt=""> -->
+                  <q class="testimonial-quote"
+                    >Lucas did an excellent job developing the apps [iOS and
+                    Android]. Communication was 5-star, Speed was 5-star,
+                    Quality of delivery was 5-star. I sincerely can't wait to
+                    work with him again, best $ spent on guru by far. Thanks
+                    Lucas.</q
+                  >
+                  <span class="testimonial-author">Eyal Co-founder</span>
+                </div>
+              </div>
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <!-- <img class="testimonial-avatar" src="img/client3.png" alt=""> -->
+                  <q class="testimonial-quote"
+                    >Great work. The best that I have ever used. Keep Lucas in
+                    good health and wealth and he delivers what he says plus
+                    more. Best choice I have made in 25 years in technology.</q
+                  >
+                  <span class="testimonial-author">Dave Kene, CTO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS END -->
+
+      <!-- BLOG / NEWS -->
+      <!-- <section id="blog">
+            <div class="section-header">
+                <div>
+                    <h2>Watch my Blog</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 item">
+                        <img src="http://themegrids.com/themes/brax/theme/typed-effect/img/blog/blog1.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                        <p>
+                            Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod
+                            nisl
+                            sem, ac rhoncus ex lacinia nec.
+                            Aliquam bibendum vel dui eu tincidunt...
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read more...</a>
+                    </div>
+                    <div class="col-12 col-lg-4 item">
+                        <img src="http://themegrids.com/themes/brax/theme/typed-effect/img/blog/blog2.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                        <p>
+                            Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod
+                            nisl
+                            sem, ac rhoncus ex lacinia nec.
+                            Aliquam bibendum vel dui eu tincidunt...
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read more...</a>
+                    </div>
+                    <div class="col-12 col-lg-4 item">
+                        <img src="http://themegrids.com/themes/brax/theme/typed-effect/img/blog/blog3.jpg"
+                            class="img-fluid" alt="">
+                        <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                        <p>
+                            Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod
+                            nisl
+                            sem, ac rhoncus ex lacinia nec.
+                            Aliquam bibendum vel dui eu tincidunt...
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      <!-- BLOG / NEWS END -->
+
+      <!-- CONTACT FORM  -->
+      <section id="contact">
+        <div class="section-header">
+          <h2 class="text-center">Contact Me</h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="text-left" style="width: 300px; line-height: 2rem">
+              <div><i class="fa fa-map-marker"> </i>&nbsp;&nbsp;Hong Kong</div>
+              <!-- <div><i class="fa fa-phone"> </i>&nbsp;&nbsp;800 123-456-789</div> -->
+              <div>
+                <i class="fa fa-envelope"> </i>&nbsp;&nbsp;lucaszhu127@gmail.com
+              </div>
+              <div>
+                <i class="fa fa-skype"> </i
+                >&nbsp;&nbsp;live:.cid.6b6904984ef1d12
+              </div>
+            </div>
+            <a
+              href="mailto:lucaszhu127@gmail.com"
+              class="btn btn-primary"
+              style="opacity: 1; display: block; width: 200px"
+              >SEND MESSAGE</a
+            ><br />
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT FORM  END -->
+    </div>
+
+    <div id="footer-wrap">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p>Copyright © 2025 Lucas Zhu</p>
+            </div>
+            <div class="col-12 col-sm-6 social">
+              <p class="pull-right">
+                <a
+                  href="https://www.facebook.com/lucas.zhu.7792"
+                  target="__black"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/yuan-zhang-zhu-949830355"
+                  target="__black"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/jsdev-mario" target="__black"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.debouncedresize.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&amp;callback=myMap">
+    </script> -->
+  </body>
+</html>
